@@ -21,12 +21,12 @@ background-image: linear-gradient(#424242, #424242);
 a:link {
   color: white;
   background-color: transparent;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:visited {
   color: white;
   background-color: transparent;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:hover {
   color: white;
@@ -75,22 +75,35 @@ a:active {
 }
 
 #myUL li a:hover:not(.header) {
-  background-color: #424242;
-  text-decoration: underline;
+  background-color: #696969;
+  text-decoration: none;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+.float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px solid red;
 }
 </style>
 </head>
 <body>
 <div class="center">
-<script src="alert.js"></script>
+    <script src="alert.js"></script>
     <h1>
     <a href="https://gamesupd.github.io" target="_self">
-        <img src="https://raw.githubusercontent.com/SuperGames-D/GameSup/main/gamesup-logo.png" alt="logo" width="160" height="40">
-    </a>
+        <img src="https://raw.githubusercontent.com/SuperGames-D/GameSup/main/gamesup-logo.png" alt="logo" width="160" height="40"></a>
         <img src="https://raw.githubusercontent.com/SuperGames-D/GameSup/main/gamesup-logo.png" alt="" width="50" height="0">
         <a href="https://gamesupd.github.io/about.html" target="_self"> About</a>
         <img src="https://raw.githubusercontent.com/SuperGames-D/GameSup/main/gamesup-logo.png" alt="" width="50" height="0">
         <a href="https://gamesupd.github.io/help.html" target="_self"> Help</a>
+        <img src="https://raw.githubusercontent.com/SuperGames-D/GameSup/main/gamesup-logo.png" alt="" width="60" height="0">
+        <a href="https://gamesupd.github.io/accounts" target="_self"> Account</a>
         <div class="searchbox">
 
             <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..." title="search">
@@ -101,36 +114,34 @@ a:active {
 
     <p style="padding: 0px; border: 2px solid white;"></p>
 <img src="https://raw.githubusercontent.com/SuperGames-D/GameSup/main/gamesup-logo.png" alt="" width="0" height="50">
+
+
+
     <ul id="myUL">
   <li><a href="https://gamesupd.github.io/games/lostgame.html"><img src="https://raw.githubusercontent.com/SuperGames-D/GameSup/main/lostgame-icon.png" alt="game icon" width="50" height="50">Lostgame</a></li>
 
   <li><a href="https://gamesupd.github.io/games/megabuild.html"><img src="https://raw.githubusercontent.com/SuperGames-D/GameSup/main/megabuild-icon.png" alt="game icon" width="50" height="50">Megabuild</a></li>
         <li><a href="https://gamesupd.github.io/games/chromedino.html"><img src="https://raw.githubusercontent.com/SuperGames-D/GameSup/main/dino-icon.png" alt="game icon" width="50" height="50">Chrome Dino</a></li>
+         <li><a href="https://gamesupd.github.io/games/bluepig.html"><img src="https://raw.githubusercontent.com/SuperGames-D/GameSup/main/icon-png.png" alt="game icon" width="50" height="50">Blue Pig</a></li>
 
 </ul>
 
-<script>
-function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
-</script>
+<script src="script.js"></script>
+
     <img src="https://raw.githubusercontent.com/SuperGames-D/GameSup/main/gamesup-logo.png" alt="" width="0" height="100">
+    <p style="padding: 0px; border: 2px solid white;"></p>
+
     <h1 style="color:white;font-size:20px;">
     © 2023 SuperGames-
   </h1>
+
+   <p> <a href="https://gamesupd.github.io/contact" target="_self"> Contact</a>
+   <p> <a href="https://gamesupd.github.io/codes" target="_self"> GameSup Codes</a>
+   <p> <a href="https://gamesupd.github.io/dev" target="_self"> GameSup Dev</a>
+    <p> <a href="https://gamesupd.github.io/privacy.html" target="_self"> Privacy Policy</a>
+    <p> <a href="https://gamesupd.github.io/faq.html" target="_self"> FAQ</a>
+
+
 </div>
 </body>
 </html>
