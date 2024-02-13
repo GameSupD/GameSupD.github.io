@@ -102,7 +102,25 @@ body {font-family: Arial, Helvetica, sans-serif;}
     padding: 20px;
     border: 2px solid red;
 }
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 2px solid white;
+  padding: 5px;
+}
+
+.closebtn:hover {
+  color: #c8c8c8;
+}
 </style>
+
 </head>
 <body>
 <div class="center">
@@ -126,7 +144,10 @@ body {font-family: Arial, Helvetica, sans-serif;}
     <p style="padding: 0px; border: 2px solid white;"></p>
 <img src="https://raw.githubusercontent.com/SuperGames-D/GameSup/main/gamesup-logo.png" alt="" width="0" height="50">
 
-
+<div style="padding: 20px; background-color: #696969; color: white; width: 40%;">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">Ok</span> 
+  This website uses Google Analytics to get data that is used to improve it.
+</div>
 
     <ul id="myUL">
                <li><a href="https://gamesupd.github.io/games/lostworld.html"><img src="https://raw.githubusercontent.com/SuperGames-D/GameSup/main/lostworld-icon.png" alt="game icon" width="50" height="50">Lostworld</a></li>
